@@ -49,15 +49,13 @@
     <!-- My Style Sheet  -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#main-navBar">
+    <span class="top"><i class="fa-solid fa-chevron-up fa-bounce"></i></span>
     <div class="loader-container">
       <span class="loader"></span>
     </div>
-
     <!-- >>>>>> start nav-bar <<<<<<< -->
-    <nav
-      class="navbar navbar-expand-lg pt-4 pb-3 position-absolute start-0 top-0 w-100"
-    >
+    <nav id="main-navBar" class="navbar navbar-expand-lg pt-4 pb-3">
       <div class="container">
         <a
           class="navbar-brand text-uppercase fs-4 fw-semibold main-color main-title"
@@ -80,25 +78,27 @@
             class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-center align-items-center row-gap-2"
           >
             <li class="nav-item me-lg-4">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
             </li>
             <li class="nav-item me-lg-4">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item me-lg-4">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item me-lg-4">
-              <a class="nav-link" href="#">Works</a>
+              <a class="nav-link" href="#portfolio">Works</a>
             </li>
             <li class="nav-item me-lg-4">
-              <a class="nav-link" href="#">Clients</a>
+              <a class="nav-link" href="#status">Clients</a>
             </li>
             <li class="nav-item me-lg-4">
-              <a class="nav-link" href="#">Team</a>
+              <a class="nav-link" href="#team">Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -109,6 +109,7 @@
     <header id="home" class="hero">
       <div
         class="container d-flex justify-content-center align-items-center vh-100 flex-column"
+        data-aos="fade-up"
       >
         <div class="caption text-center text-white">
           <p class="h1 fw-bolder mb-3">Hello</p>
@@ -208,7 +209,7 @@
       <!-- >>>>>> start about section <<<<<<< -->
       <section id="about" class="about section-padding">
         <div class="container">
-          <div class="row row-gap-4">
+          <div class="row row-gap-4" data-aos="fade-up">
             <div class="col-lg-5 d-flex justify-content-center px-3 px-lg-0">
               <div class="img-holder ps-4 pb-4">
                 <img src="imgs/hero.jpg" alt="about-img" class="img-fluid" />
@@ -301,7 +302,11 @@
         <div class="container">
           <h2 class="section-title fw-bolder">Services.</h2>
           <div class="row">
-            <div class="col-lg-4 col-md-6 px-3">
+            <div
+              class="col-lg-4 col-md-6 px-3"
+              data-aos="fade-up"
+              data-aos-delay="50"
+            >
               <div class="serv-holder rounded-2 px-4 py-5 text-center">
                 <div
                   class="serv-item d-flex align-items-center row-gap-3 flex- flex-column"
@@ -317,7 +322,11 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 px-3">
+            <div
+              class="col-lg-4 col-md-6 px-3"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
               <div class="serv-holder rounded-2 px-4 py-5 text-center">
                 <div
                   class="serv-item d-flex align-items-center row-gap-3 flex- flex-column"
@@ -333,7 +342,11 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 px-3">
+            <div
+              class="col-lg-4 col-md-6 px-3"
+              data-aos="fade-up"
+              data-aos-delay="250"
+            >
               <div class="serv-holder rounded-2 px-4 py-5 text-center">
                 <div
                   class="serv-item d-flex align-items-center row-gap-3 flex- flex-column"
@@ -349,7 +362,11 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 px-3">
+            <div
+              class="col-lg-4 col-md-6 px-3"
+              data-aos="fade-up"
+              data-aos-delay="50"
+            >
               <div class="serv-holder rounded-2 px-4 py-5 text-center">
                 <div
                   class="serv-item d-flex align-items-center row-gap-3 flex- flex-column"
@@ -365,7 +382,11 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 px-3">
+            <div
+              class="col-lg-4 col-md-6 px-3"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
               <div class="serv-holder rounded-2 px-4 py-5 text-center">
                 <div
                   class="serv-item d-flex align-items-center row-gap-3 flex- flex-column"
@@ -381,7 +402,11 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 px-3">
+            <div
+              class="col-lg-4 col-md-6 px-3"
+              data-aos="fade-up"
+              data-aos-delay="250"
+            >
               <div class="serv-holder rounded-2 px-4 py-5 text-center">
                 <div
                   class="serv-item d-flex align-items-center row-gap-3 flex- flex-column"
@@ -409,6 +434,7 @@
             class="nav mb-5 justify-content-center"
             id="pills-tab"
             role="tablist"
+            data-aos="fade-up"
           >
             <li class="nav-item px-sm-3 px-2" role="presentation">
               <button
@@ -476,12 +502,16 @@
               tabindex="0"
             >
               <div class="row">
-                <div class="col-lg-4 px-3">
-                  <div class="port-holder">
+                <div
+                  class="col-lg-4 col-md-6 px-3"
+                  data-aos="fade-up"
+                  data-aos-delay="50"
+                >
+                  <div class="port-holder animate__animated animate__fadeInUp">
                     <div class="port-item position-relative">
                       <img
                         src="./imgs/portfolio/1.jpg"
-                        class="img-fluid"
+                        class="img-fluid gallery-item"
                         alt="portfolio-1"
                       />
                       <div
@@ -492,7 +522,7 @@
                         </h3>
                         <div class="links d-flex gap-1">
                           <span><i class="fa-solid fa-link"></i></span>
-                          <span
+                          <span class="open-slider"
                             ><i class="fa-solid fa-magnifying-glass-plus"></i
                           ></span>
                         </div>
@@ -500,12 +530,16 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 px-3">
-                  <div class="port-holder">
+                <div
+                  class="col-lg-4 col-md-6 px-3"
+                  data-aos="fade-up"
+                  data-aos-delay="150"
+                >
+                  <div class="port-holder animate__animated animate__fadeInUp">
                     <div class="port-item position-relative">
                       <img
                         src="./imgs/portfolio/2.jpg"
-                        class="img-fluid"
+                        class="img-fluid gallery-item"
                         alt="portfolio-2"
                       />
                       <div
@@ -516,7 +550,7 @@
                         </h3>
                         <div class="links d-flex gap-1">
                           <span><i class="fa-solid fa-link"></i></span>
-                          <span
+                          <span class="open-slider"
                             ><i class="fa-solid fa-magnifying-glass-plus"></i
                           ></span>
                         </div>
@@ -524,12 +558,16 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 px-3">
-                  <div class="port-holder">
+                <div
+                  class="col-lg-4 col-md-6 px-3"
+                  data-aos="fade-up"
+                  data-aos-delay="250"
+                >
+                  <div class="port-holder animate__animated animate__fadeInUp">
                     <div class="port-item position-relative">
                       <img
                         src="./imgs/portfolio/3.jpg"
-                        class="img-fluid"
+                        class="img-fluid gallery-item"
                         alt="portfolio-3"
                       />
                       <div
@@ -540,7 +578,7 @@
                         </h3>
                         <div class="links d-flex gap-1">
                           <span><i class="fa-solid fa-link"></i></span>
-                          <span
+                          <span class="open-slider"
                             ><i class="fa-solid fa-magnifying-glass-plus"></i
                           ></span>
                         </div>
@@ -548,12 +586,16 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 px-3">
-                  <div class="port-holder">
+                <div
+                  class="col-lg-4 col-md-6 px-3"
+                  data-aos="fade-up"
+                  data-aos-delay="50"
+                >
+                  <div class="port-holder animate__animated animate__fadeInUp">
                     <div class="port-item position-relative">
                       <img
                         src="./imgs/portfolio/4.jpg"
-                        class="img-fluid"
+                        class="img-fluid gallery-item"
                         alt="portfolio-4"
                       />
                       <div
@@ -564,7 +606,7 @@
                         </h3>
                         <div class="links d-flex gap-1">
                           <span><i class="fa-solid fa-link"></i></span>
-                          <span
+                          <span class="open-slider"
                             ><i class="fa-solid fa-magnifying-glass-plus"></i
                           ></span>
                         </div>
@@ -572,12 +614,16 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 px-3">
-                  <div class="port-holder">
+                <div
+                  class="col-lg-4 col-md-6 px-3"
+                  data-aos="fade-up"
+                  data-aos-delay="150"
+                >
+                  <div class="port-holder animate__animated animate__fadeInUp">
                     <div class="port-item position-relative">
                       <img
                         src="./imgs/portfolio/5.jpg"
-                        class="img-fluid"
+                        class="img-fluid gallery-item"
                         alt="portfolio-5"
                       />
                       <div
@@ -588,7 +634,7 @@
                         </h3>
                         <div class="links d-flex gap-1">
                           <span><i class="fa-solid fa-link"></i></span>
-                          <span
+                          <span class="open-slider"
                             ><i class="fa-solid fa-magnifying-glass-plus"></i
                           ></span>
                         </div>
@@ -596,12 +642,16 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 px-3">
-                  <div class="port-holder">
+                <div
+                  class="col-lg-4 col-md-6 px-3"
+                  data-aos="fade-up"
+                  data-aos-delay="250"
+                >
+                  <div class="port-holder animate__animated animate__fadeInUp">
                     <div class="port-item position-relative">
                       <img
                         src="./imgs/portfolio/6.jpg"
-                        class="img-fluid"
+                        class="img-fluid gallery-item"
                         alt="portfolio-6"
                       />
                       <div
@@ -612,7 +662,7 @@
                         </h3>
                         <div class="links d-flex gap-1">
                           <span><i class="fa-solid fa-link"></i></span>
-                          <span
+                          <span class="open-slider"
                             ><i class="fa-solid fa-magnifying-glass-plus"></i
                           ></span>
                         </div>
@@ -630,12 +680,14 @@
               tabindex="0"
             >
               <div class="row">
-                <div class="col-lg-4 px-3">
+                <div
+                  class="col-lg-4 col-md-6 px-3 animate__animated animate__fadeInLeft"
+                >
                   <div class="port-holder">
                     <div class="port-item position-relative">
                       <img
                         src="./imgs/portfolio/4.jpg"
-                        class="img-fluid"
+                        class="img-fluid gallery-item"
                         alt="portfolio-4"
                       />
                       <div
@@ -646,7 +698,7 @@
                         </h3>
                         <div class="links d-flex gap-1">
                           <span><i class="fa-solid fa-link"></i></span>
-                          <span
+                          <span class="open-slider"
                             ><i class="fa-solid fa-magnifying-glass-plus"></i
                           ></span>
                         </div>
@@ -654,12 +706,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 px-3">
+                <div
+                  class="col-lg-4 col-md-6 px-3 animate__animated animate__fadeInLeft"
+                >
                   <div class="port-holder">
                     <div class="port-item position-relative">
                       <img
                         src="./imgs/portfolio/6.jpg"
-                        class="img-fluid"
+                        class="img-fluid gallery-item"
                         alt="portfolio-6"
                       />
                       <div
@@ -670,7 +724,7 @@
                         </h3>
                         <div class="links d-flex gap-1">
                           <span><i class="fa-solid fa-link"></i></span>
-                          <span
+                          <span class="open-slider"
                             ><i class="fa-solid fa-magnifying-glass-plus"></i
                           ></span>
                         </div>
@@ -688,12 +742,14 @@
               tabindex="0"
             >
               <div class="row">
-                <div class="col-lg-4 px-3">
+                <div
+                  class="col-lg-4 col-md-6 px-3 animate__animated animate__fadeInDown"
+                >
                   <div class="port-holder">
                     <div class="port-item position-relative">
                       <img
                         src="./imgs/portfolio/2.jpg"
-                        class="img-fluid"
+                        class="img-fluid gallery-item"
                         alt="portfolio-2"
                       />
                       <div
@@ -704,7 +760,7 @@
                         </h3>
                         <div class="links d-flex gap-1">
                           <span><i class="fa-solid fa-link"></i></span>
-                          <span
+                          <span class="open-slider"
                             ><i class="fa-solid fa-magnifying-glass-plus"></i
                           ></span>
                         </div>
@@ -712,12 +768,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 px-3">
+                <div
+                  class="col-lg-4 col-md-6 px-3 animate__animated animate__fadeInDown"
+                >
                   <div class="port-holder">
                     <div class="port-item position-relative">
                       <img
                         src="./imgs/portfolio/5.jpg"
-                        class="img-fluid"
+                        class="img-fluid gallery-item"
                         alt="portfolio-5"
                       />
                       <div
@@ -728,7 +786,7 @@
                         </h3>
                         <div class="links d-flex gap-1">
                           <span><i class="fa-solid fa-link"></i></span>
-                          <span
+                          <span class="open-slider"
                             ><i class="fa-solid fa-magnifying-glass-plus"></i
                           ></span>
                         </div>
@@ -746,12 +804,14 @@
               tabindex="0"
             >
               <div class="row">
-                <div class="col-lg-4 px-3">
+                <div
+                  class="col-lg-4 col-md-6 px-3 animate__animated animate__fadeInRight"
+                >
                   <div class="port-holder">
                     <div class="port-item position-relative">
                       <img
                         src="./imgs/portfolio/1.jpg"
-                        class="img-fluid"
+                        class="img-fluid gallery-item"
                         alt="portfolio-1"
                       />
                       <div
@@ -762,7 +822,7 @@
                         </h3>
                         <div class="links d-flex gap-1">
                           <span><i class="fa-solid fa-link"></i></span>
-                          <span
+                          <span class="open-slider"
                             ><i class="fa-solid fa-magnifying-glass-plus"></i
                           ></span>
                         </div>
@@ -770,12 +830,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 px-3">
+                <div
+                  class="col-lg-4 col-md-6 px-3 animate__animated animate__fadeInRight"
+                >
                   <div class="port-holder">
                     <div class="port-item position-relative">
                       <img
                         src="./imgs/portfolio/3.jpg"
-                        class="img-fluid"
+                        class="img-fluid gallery-item"
                         alt="portfolio-3"
                       />
                       <div
@@ -786,7 +848,7 @@
                         </h3>
                         <div class="links d-flex gap-1">
                           <span><i class="fa-solid fa-link"></i></span>
-                          <span
+                          <span class="open-slider"
                             ><i class="fa-solid fa-magnifying-glass-plus"></i
                           ></span>
                         </div>
@@ -794,12 +856,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 px-3">
+                <div
+                  class="col-lg-4 col-md-6 px-3 animate__animated animate__fadeInRight"
+                >
                   <div class="port-holder">
                     <div class="port-item position-relative">
                       <img
                         src="./imgs/portfolio/5.jpg"
-                        class="img-fluid"
+                        class="img-fluid gallery-item"
                         alt="portfolio-5"
                       />
                       <div
@@ -810,7 +874,7 @@
                         </h3>
                         <div class="links d-flex gap-1">
                           <span><i class="fa-solid fa-link"></i></span>
-                          <span
+                          <span class="open-slider"
                             ><i class="fa-solid fa-magnifying-glass-plus"></i
                           ></span>
                         </div>
@@ -822,9 +886,411 @@
             </div>
           </div>
         </div>
+        <div
+          class="modal fade"
+          id="portfolioModal"
+          tabindex="-1"
+          aria-labelledby="portfolioModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <button
+                type="button"
+                class="close btn"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="modal-body">
+                <div
+                  id="carouselPortfolio"
+                  class="carousel slide carousel-fade"
+                >
+                  <div class="carousel-inner" id="carousel-inner"></div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselPortfolio"
+                    data-bs-slide="prev"
+                  >
+                    <span class="carousel-control-prev-icon" aria-hidden="true">
+                      <i class="fa-solid fa-chevron-left"></i>
+                    </span>
+                    <span class="sr-only">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselPortfolio"
+                    data-bs-slide="next"
+                  >
+                    <span class="carousel-control-next-icon" aria-hidden="true">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                    <span class="sr-only">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- >>>>>> end portfolio section <<<<<<< -->
+      <!-- >>>>>> start testimonials section <<<<<<< -->
+      <section id="testimonials" class="testimonials section-padding">
+        <div class="container">
+          <h2 class="section-title fw-bolder">Testimonials.</h2>
+          <div class="swiper">
+            <div class="slide-content">
+              <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                  <div class="row text-center px-2">
+                    <div class="img-holder my-2">
+                      <img src="imgs/testi-1.jpg" alt="testimonials-1" />
+                    </div>
+                    <p class="w-75 m-auto mt-4 mb-4 text-color">
+                      <i class="fa-solid fa-quote-left"></i>
+                      <span>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the when an unknown printer took a galley of
+                        type and scrambled it to make a type specimen
+                        book.</span
+                      >
+                      <i class="fa-solid fa-quote-right"></i>
+                    </p>
+                    <h3 class="text-color fs-6 mt-2">Alex Smith</h3>
+                    <span class="opacity-75 job">Envato Customer</span>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="row text-center px-2">
+                    <div class="img-holder my-2">
+                      <img src="imgs/testi-2.jpg" alt="testimonials-2" />
+                    </div>
+                    <p class="w-75 m-auto mt-4 mb-4 text-color">
+                      <i class="fa-solid fa-quote-left"></i>
+                      <span>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the when an unknown printer took a galley of
+                        type and scrambled it to make a type specimen
+                        book.</span
+                      >
+                      <i class="fa-solid fa-quote-right"></i>
+                    </p>
+                    <h3 class="text-color fs-6 mt-2">Alex Smith</h3>
+                    <span class="opacity-75 job">Envato Customer</span>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="row text-center px-2">
+                    <div class="img-holder my-2">
+                      <img src="imgs/testi-3.jpg" alt="testimonials-3" />
+                    </div>
+                    <p class="w-75 m-auto mt-4 mb-4 text-color">
+                      <i class="fa-solid fa-quote-left"></i>
+                      <span>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the when an unknown printer took a galley of
+                        type and scrambled it to make a type specimen
+                        book.</span
+                      >
+                      <i class="fa-solid fa-quote-right"></i>
+                    </p>
+                    <h3 class="text-color fs-6 mt-2">Alex Smith</h3>
+                    <span class="opacity-75 job">Envato Customer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- >>>>>> end testimonials section <<<<<<< -->
+      <!-- >>>>>> start status section <<<<<<< -->
+      <section id="status" class="status main">
+        <div class="container">
+          <div class="row row-gap-4">
+            <div
+              class="col-lg-3 col-md-6 col-12 text-center"
+              data-aos="zoom-in"
+            >
+              <i class="mb-3 text-color fa-solid fa-users fa-2x"></i>
+              <p class="num fw-bold" data-goal="850">0</p>
+              <span class="d-inline-block mt-2">Happy Customers</span>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 col-12 text-center"
+              data-aos="zoom-in"
+            >
+              <i class="mb-3 text-color fa-solid fa-thumbs-up fa-2x"></i>
+              <p class="num fw-bold" data-goal="230">0</p>
+              <span class="d-inline-block mt-2">Complete Projects</span>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 col-12 text-center"
+              data-aos="zoom-in"
+            >
+              <i class="mb-3 text-color fa-solid fa-bullhorn fa-2x"></i>
+              <p class="num fw-bold" data-goal="9450">0</p>
+              <span class="d-inline-block mt-2">Lines Of Code</span>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 col-12 text-center"
+              data-aos="zoom-in"
+            >
+              <i class="mb-3 text-color fa-solid fa-cloud-download fa-2x"></i>
+              <p class="num fw-bold" data-goal="780">0</p>
+              <span class="d-inline-block mt-2">Files Downloaded</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- >>>>>> end status section <<<<<<< -->
+      <!-- >>>>>> start team section <<<<<<< -->
+      <section id="team" class="team section-padding">
+        <div class="container">
+          <h2 class="section-title fw-bolder">Our Team.</h2>
+          <div class="row">
+            <div
+              class="col-lg-4 col-md-6 px-3"
+              data-aos="fade-up"
+              data-aos-delay="0"
+            >
+              <div class="team-item">
+                <div class="card rounded-top-0 border-0 bg-transparent">
+                  <div class="img-holder position-relative overflow-hidden">
+                    <img src="./imgs/1.jpg" class="w-100" alt="team-1" />
+                    <div
+                      class="overlay d-flex justify-content-center align-items-center"
+                    >
+                      <ul
+                        class="list-unstyled gap-2 d-flex justify-content-center align-items-center"
+                      >
+                        <li>
+                          <a href="#" aria-label="Facebook"
+                            ><i class="fa-brands fa-facebook-f"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" aria-label="Twitter"
+                            ><i class="fa-brands fa-x-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" aria-label="Twitter"
+                            ><i class="fa-brands fa-pinterest"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" aria-label="Linkedin"
+                            ><i class="fa-brands fa-linkedin-in"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-body text-center rounded-bottom-2 py-4">
+                    <h3 class="text-color fs-4 mb-1 fw-semibold">John Doe</h3>
+                    <p class="card-text text-color fs-5 text-uppercase fw-bold">
+                      Front-End Developer
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 px-3"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="team-item">
+                <div class="card rounded-top-0 border-0 bg-transparent">
+                  <div class="img-holder position-relative overflow-hidden">
+                    <img src="./imgs/2.jpg" class="w-100" alt="team-2" />
+                    <div
+                      class="overlay d-flex justify-content-center align-items-center"
+                    >
+                      <ul
+                        class="list-unstyled gap-2 d-flex justify-content-center align-items-center"
+                      >
+                        <li>
+                          <a href="#" aria-label="Facebook"
+                            ><i class="fa-brands fa-facebook-f"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" aria-label="Twitter"
+                            ><i class="fa-brands fa-x-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" aria-label="Twitter"
+                            ><i class="fa-brands fa-pinterest"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" aria-label="Linkedin"
+                            ><i class="fa-brands fa-linkedin-in"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-body text-center rounded-bottom-2 py-4">
+                    <h3 class="text-color fs-4 mb-1 fw-semibold">Dave Wood</h3>
+                    <p class="card-text text-color fs-5 text-uppercase fw-bold">
+                      Back-End Developer
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 px-3"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="team-item">
+                <div class="card rounded-top-0 border-0 bg-transparent">
+                  <div class="img-holder position-relative overflow-hidden">
+                    <img src="./imgs/1.jpg" class="w-100" alt="team-1" />
+                    <div
+                      class="overlay d-flex justify-content-center align-items-center"
+                    >
+                      <ul
+                        class="list-unstyled gap-2 d-flex justify-content-center align-items-center"
+                      >
+                        <li>
+                          <a href="#" aria-label="Facebook"
+                            ><i class="fa-brands fa-facebook-f"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" aria-label="Twitter"
+                            ><i class="fa-brands fa-x-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" aria-label="Twitter"
+                            ><i class="fa-brands fa-pinterest"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" aria-label="Linkedin"
+                            ><i class="fa-brands fa-linkedin-in"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-body text-center rounded-bottom-2 py-4">
+                    <h3 class="text-color fs-4 mb-1 fw-semibold">
+                      Claire Chedd
+                    </h3>
+                    <p class="card-text text-color fs-5 text-uppercase fw-bold">
+                      Back-End Developer
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- >>>>>> end team section <<<<<<< -->
+      <!-- >>>>>> start contact section <<<<<<< -->
+      <section id="contact" class="contact section-padding">
+        <div class="container" data-aos="fade-up" data-aos-delay="0">
+          <h2 class="section-title fw-bolder">Contact Us.</h2>
+          <div
+            class="row row-gap-4 justify-content-center justify-content-md-start"
+          >
+            <div class="col-lg-10 offset-lg-1 row">
+              <div class="col-lg-4">
+                <div class="contact-item text-center">
+                  <span class="mb-3 mx-auto"
+                    ><i class="fa-solid fa-location-arrow"></i
+                  ></span>
+                  <span class="text-color mb-3 d-inline-block fw-bold"
+                    >Address</span
+                  >
+                  <p class="text-color opacity-75">
+                    6834 Hollywood Blvd - Los Angeles CA
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="contact-item text-center">
+                  <span class="mb-3 mx-auto"
+                    ><i class="fa-solid fa-envelope"></i
+                  ></span>
+                  <span class="text-color mb-3 d-inline-block fw-bold"
+                    >Email</span
+                  >
+                  <p class="text-color opacity-75">
+                    <a href="mailto:Support@website.com" class="text-color"
+                      >Support@website.com</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="contact-item text-center">
+                  <span class="mb-3 mx-auto"
+                    ><i class="fa-solid fa-phone"></i
+                  ></span>
+                  <span class="text-color mb-3 d-inline-block fw-bold"
+                    >Address</span
+                  >
+                  <p class="text-color opacity-75">
+                    <a href="tel:+20 010 2517 8918" class="text-color"
+                      >+20 010 2517 8918</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <form class="col-lg-10 offset-lg-1 row row-gap-4">
+              <div class="col-lg-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Name"
+                  aria-label="First name"
+                />
+              </div>
+              <div class="col-lg-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Last name"
+                  aria-label="Last name"
+                />
+              </div>
+              <div class="col-lg-12">
+                <textarea
+                  name="message"
+                  placeholder="Message"
+                  class="form-control"
+                ></textarea>
+              </div>
+              <div>
+                <button type="submit" class="btn">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- >>>>>> end contact section <<<<<<< -->
     </main>
+    <footer class="text-center">
+      <p class="text-color mb-0 opacity-75">
+        Copy Right 2018 © By Daniels All Rights Reserved
+      </p>
+    </footer>
     <div class="fix"></div>
     <!-- Bootstrap Js file -->
     <script src=" ./js/bootstrap.bundle.min.js"></script>
