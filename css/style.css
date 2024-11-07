@@ -875,7 +875,7 @@ body:has(div.fix) {
   color: #212529;
 }
 
-.team .img-holder:hover .overlay {
+.team .team-item:hover .img-holder .overlay {
   transform: rotateY(360deg) scale(1);
   opacity: 1;
 }

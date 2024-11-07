@@ -240,7 +240,7 @@ window.addEventListener("load", () => {
       progresBarsWidth();
       statuCount();
     });
-  }, 1500);
+  }, 1200);
 });
 
 // nav-bar bg control
